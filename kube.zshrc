@@ -4,7 +4,12 @@ kcsn() {
     k config set-context $(k config current-context) --namespace "$1";
 }
 
-alias kcurl='kubectl run curl-$$ --image curlimages/curl --rm -it --restart Never ' 
-alias kbbox='kubectl run bbox-$$ --image yauritux/busybox-curl --restart Never '
-alias kssh='kubectl run sshcli-$$ --image occitech/ssh-client --restart Never '
-alias kssh='kubectl run awscli-$$ --image amazon/aws-cli --rm -it --restart Never '
+alias randsuffix='openssl rand -hex 6'
+alias kcurl='kubectl run curl-$(randsuffix) --image curlimages/curl --rm -it --restart Never ' 
+alias kbbox='kubectl run bbox-$(randsuffix) --image yauritux/busybox-curl --restart Never '
+alias kssh='kubectl run sshcli-$(randsuffix) --image occitech/ssh-client --restart Never '
+alias kaws='kubectl run awscli-$(randsuffix) --image amazon/aws-cli --rm -it --restart Never '
+
+kcheckport() {
+    kbbox --rm -it -- sh -c "cat /dev/null | nc -w 10 $1 $2 && echo 'Port $2 of $1 is open'"
+}

@@ -28,9 +28,20 @@ hgcv() {
 }
 
 # KUBERNETES
+# kubectl logs by label
+klbl () {
+  declare -r tail=$([[ "$@" =~ "--tail" ]] && echo "" || echo "--tail=-1")
+  kubectl logs $tail -l "$1" ${@:2}
+}
+
+
 # kubectl logs by app name
 klban () {
-  declare -r tail=$([[ "$@" =~ "--tail" ]] && echo "" || echo "--tail=-1")
-  kubectl logs $tail -l "app.kubernetes.io/name=$1" ${@:2}
+  klbl  "app.kubernetes.io/name=$1" ${@:2}
+}
+
+# kubectl logs by app instance
+klbai () {
+  klbl  "app.kubernetes.io/instance=$1" ${@:2}
 }
 
