@@ -8,6 +8,8 @@ alias tp="terraform plan"
 alias ta="terraform apply"
 alias ti="terraform init"
 alias tir="terraform init -reconfgure"
+alias ts="terraform state"
+alias tsl="terraform state list"
 alias tg="terragrunt"
 
 alias h="helm"
