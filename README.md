@@ -9,6 +9,7 @@ brew install \
   ansible                        \
   ansible-lint                   \
   argocd                         \
+  asdf                           \
   aws-iam-authenticator          \
   awscli                         \
   bash                           \
@@ -21,7 +22,7 @@ brew install \
   direnv                         \
   docker-credential-helper-ecr   \
   exa                            \
-  expect                         \
+  fd                             \
   gnupg                          \
   go                             \
   goenv                          \
@@ -31,16 +32,19 @@ brew install \
   jenv                           \
   jq                             \
   kotlin                         \
+  krew                           \
   kubernetes-cli                 \
   masscan                        \
   maven                          \
   netcat                         \
   node                           \
+  openjdk                        \
   p7zip                          \
   plantuml                       \
   pre-commit                     \
   procs                          \
   pyenv                          \
+  rclone                         \
   readline                       \
   ripgrep                        \
   rust                           \
@@ -57,33 +61,40 @@ brew install \
   tree                           \
   wget                           \
   yq                             \
-  ytop
+  ytop \
+  warrensbox/tap/tfswitch \
 && \
 brew install --cask \
   1password               \
   balenaetcher            \
+  coconutbattery          \
+  confluent-cli           \
   confluent-hub-client    \
-  dash                    \
+  cyberduck               \
   disk-inventory-x        \
   dropbox                 \
   firefox                 \
   gitup                   \
   google-chrome           \
+  google-backup-and-sync  \
   google-cloud-sdk        \
   insomnia                \
   intellij-idea           \
   iterm2                  \
   java                    \
   keka                    \
-  lens                    \
   macvim                  \
   microsoft-teams         \
   sensiblesidebuttons     \
   session-manager-plugin  \
   slack                   \
   spotify                 \
-  turbo-boost-switcher    \
+  todoist                 \
+  vagrant                 \
+  virtualbox              \
+  wireshark               \
   yed                     
+
 ```
 
 Oh my zsh
