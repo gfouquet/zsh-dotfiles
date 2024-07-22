@@ -1,6 +1,12 @@
 # TOOLS ALIASES
 alias k="kubectl"
 
+alias kn="kubens"
+alias knc="kubens --current"
+alias kx="kubectx"
+alias kxc="kubectx --current"
+alias kc="kubectx"
+
 alias g="git"
 
 alias t="terraform"
@@ -25,10 +31,18 @@ alias hra="helm repo add"
 alias hrl="helm repo list"
 
 # ALIASES CLI RUST
-alias ls="exa"
-alias ll="exa -al"
+alias ls="eza"
+alias ll="eza -al"
 alias grep="rg"
 alias cat="bat --plain --paging=never"
+alias bottom="btm"
+
+
+alias nerdctl="nerdctl.lima"
+
+
+#alias cd="z"
+
 
 
 # ALIASES PERSO
@@ -41,5 +55,4 @@ alias flushdns="sudo killall -HUP mDNSResponder"
 
 alias python="/usr/local/bin/python3"
 alias pip="/usr/local/bin/pip3"
-
 

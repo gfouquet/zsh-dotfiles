@@ -11,7 +11,7 @@ alias kssh='kubectl run sshcli-$(randsuffix) --image occitech/ssh-client --resta
 alias kaws='kubectl run awscli-$(randsuffix) --image amazon/aws-cli --rm -it --restart Never '
 
 kcheckport() {
-    kbbox --rm -it -- sh -c "cat /dev/null | nc -w 10 $1 $2 && echo 'Port $2 of $1 is open' || echo 'Port $2 of $1 is not reacheable'"
+    kubectl run bbox-$(randsuffix) --image busybox --restart Never --rm -it -- sh -c "cat /dev/null | nc -w 10 $1 $2 && echo 'Port $2 of $1 is open' || echo 'Port $2 of $1 is not reacheable'"
 }
 
 export PATH="${PATH}:${HOME}/.krew/bin"

@@ -45,3 +45,13 @@ klbai () {
   klbl  "app.kubernetes.io/instance=$1" ${@:2}
 }
 
+# kubectl create job from cronjob
+kcjfcj() {
+  declare -r cronjob="$1"
+  if [[ -z "$cronjob" ]]; then
+    echo "usage : $0 <cronjob>"
+    exit 1
+  fi
+  kubectl create job manual-$cronjob-$(randsuffix) --from cj/$cronjob
+}
+
