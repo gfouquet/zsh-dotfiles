@@ -53,6 +53,3 @@ alias mfi="mvn install -DskipTests"
 alias flushdns="sudo killall -HUP mDNSResponder"
 
 
-alias python="/usr/local/bin/python3"
-alias pip="/usr/local/bin/pip3"
-
