@@ -6,312 +6,417 @@ Prerequisite :
 ```
 brew update && \
 brew install \
-    adwaita-icon-theme \
-    ansible \
-    ansible-lint \
-    aom \
-    argocd \
-    argp-standalone \
-    aribb24 \
-    asdf \
-    autoconf \
-    automake \
-    aws-iam-authenticator \
-    awscli \
-    bash \
-    bat \
-    bats-core \
-    black \
-    bottom \
-    brotli \
-    buildkit \
-    c-ares \
-    ca-certificates \
-    cairo \
-    capstone \
-    certifi \
-    cffi \
-    checkov \
-    cjson \
-    cloc \
-    cloud-nuke \
-    coreutils \
-    cryptography \
-    curl \
-    czkawka \
-    dav1d \
-    direnv \
-    docker-compose \
-    docker-credential-helper-ecr \
-    docutils \
-    dtc \
-    dust \
-    eks-node-viewer \
-    eza \
-    f3 \
-    fd \
-    ffmpeg \
-    flac \
-    fontconfig \
-    freetype \
-    frei0r \
-    fribidi \
-    gcc \
-    gd \
-    gdbm \
-    gdk-pixbuf \
-    gettext \
-    ghorg \
-    giflib \
-    glab \
-    glib \
-    gmp \
-    gnupg \
-    gnutls \
-    go \
-    goenv \
-    gradle \
-    graphene \
-    graphite2 \
-    graphviz \
-    groovysdk \
-    gtk4 \
-    gts \
-    hadolint \
-    harfbuzz \
-    helm \
-    hicolor-icon-theme \
-    highway \
-    hwloc \
-    icu4c \
-    imath \
-    isl \
-    jasper \
-    jenv \
-    jinja2-cli \
-    jpeg-turbo \
-    jpeg-xl \
-    jq \
-    jsonnet \
-    kics \
-    kotlin \
-    kpoof \
-    krew \
-    kube-ps1 \
-    kubectx \
-    kubernetes-cli \
-    lame \
-    leptonica \
-    libarchive \
-    libass \
-    libassuan \
-    libavif \
-    libb2 \
-    libbluray \
-    libde265 \
-    libepoxy \
-    libevent \
-    libgcrypt \
-    libgit2 \
-    libgpg-error \
-    libheif \
-    libidn2 \
-    libksba \
-    libmicrohttpd \
-    libmpc \
-    libnghttp2 \
-    libogg \
-    libpng \
-    librist \
-    librsvg \
-    libsamplerate \
-    libslirp \
-    libsndfile \
-    libsodium \
-    libsoxr \
-    libssh \
-    libssh2 \
-    libtasn1 \
-    libtiff \
-    libtool \
-    libunibreak \
-    libunistring \
-    libusb \
-    libuv \
-    libvidstab \
-    libvmaf \
-    libvorbis \
-    libvpx \
-    libx11 \
-    libxau \
-    libxcb \
-    libxdmcp \
-    libxext \
-    libxrender \
-    libyaml \
-    lima \
-    little-cms2 \
-    llvm \
-    lz4 \
-    lzo \
-    m1-terraform-provider-helper \
-    m4 \
-    masscan \
-    maven \
-    mbedtls \
-    mpdecimal \
-    mpfr \
-    mpg123 \
-    ncurses \
-    netcat \
-    netpbm \
-    nettle \
-    node \
-    npth \
-    numpy \
-    nvm \
-    oniguruma \
-    openblas \
-    opencore-amr \
-    openexr \
-    openjdk \
-    openjdk@17 \
-    openjpeg \
-    openldap \
-    openssl@3 \
-    openvino \
-    opus \
-    p11-kit \
-    p7zip \
-    pango \
-    pcre2 \
-    pgbadger \
-    pinentry \
-    pinentry-mac \
-    pixman \
-    pkg-config \
-    plantuml \
-    pre-commit \
-    procs \
-    pugixml \
-    pycparser \
-    pyenv \
-    pyoxidizer \
-    python-certifi \
-    python-cryptography \
-    python-markdown \
-    python-packaging \
-    python-setuptools \
-    python@3.10 \
-    python@3.11 \
-    python@3.12 \
-    q \
-    qemu \
-    rav1e \
-    rclone \
-    readline \
-    ripgrep \
-    ronn \
-    rtmpdump \
-    rubberband \
-    rust \
-    sdl2 \
-    shared-mime-info \
-    shellcheck \
-    siege \
-    skaffold \
-    snappy \
-    socat \
-    sonar-scanner \
-    sops \
-    speex \
-    sqlite \
-    srt \
-    starship \
-    stress \
-    svt-av1 \
-    tbb \
-    terraform \
-    terraform-docs \
-    terragrunt \
-    tesseract \
-    tflint \
-    tfsec \
-    tfswitch \
-    theora \
-    tmux \
-    tree \
-    trivy \
-    trufflehog \
-    unbound \
-    unixodbc \
-    utf8proc \
-    vde \
-    virtualenv \
-    webp \
-    webp-pixbuf-loader \
-    wget \
-    x264 \
-    x265 \
-    xorgproto \
-    xvid \
-    xz \
-    yamllint \
-    yq \
-    z3 \
-    zeromq \
-    zimg \
-    zoxide \
-    zstd \
+adwaita-icon-theme
+ansible
+ansible-lint
+aom
+argocd
+argp-standalone
+aribb24
+asdf
+autoconf
+aws-iam-authenticator
+awscli
+azure-cli
+bash
+bat
+bats-assert
+bats-core
+bats-file
+bats-support
+black
+bottom
+brotli
+buildkit
+c-ares
+ca-certificates
+cairo
+capstone
+certifi
+cffi
+checkov
+cjson
+cloc
+cloud-nuke
+coreutils
+cryptography
+cscope
+curl
+czkawka
+dav1d
+direnv
+dive
+docker-compose
+docker-credential-helper-ecr
+docutils
+dtc
+dust
+eks-node-viewer
+eza
+f3
+fd
+ffmpeg
+flac
+fontconfig
+freetype
+frei0r
+fribidi
+gcc
+gd
+gdk-pixbuf
+gettext
+ghorg
+giflib
+git
+git-lfs
+gitui
+glab
+glib
+gmp
+gnupg
+gnutls
+go
+goenv
+golangci-lint
+goreleaser
+gpgme
+gradle
+gradle-completion
+graphene
+graphite2
+graphviz
+groovysdk
+gtk4
+gts
+hadolint
+harfbuzz
+helm
+helm-docs
+hicolor-icon-theme
+highway
+icu4c@76
+icu4c@77
+icu4c@78
+imath
+isl
+jasper
+jenv
+jinja2-cli
+jpeg-turbo
+jpeg-xl
+jq
+jsonnet
+kics
+kotlin
+kpoof
+krew
+kube-ps1
+kubectx
+kubent
+kubernetes-cli
+lame
+leptonica
+libarchive
+libass
+libassuan
+libavif
+libb2
+libbluray
+libde265
+libdeflate
+libepoxy
+libevent
+libgcrypt
+libgit2
+libgpg-error
+libheif
+libiconv
+libidn2
+libksba
+libmicrohttpd
+libmpc
+libnghttp2
+libnghttp3
+libngtcp2
+libogg
+libomp
+libpng
+libraw
+librist
+librsvg
+libsamplerate
+libslirp
+libsndfile
+libsodium
+libsoxr
+libssh
+libssh2
+libtasn1
+libtiff
+libtool
+libudfread
+libunibreak
+libunistring
+libusb
+libuv
+libvidstab
+libvmaf
+libvorbis
+libvpx
+libx11
+libxau
+libxcb
+libxdmcp
+libxext
+libxrender
+libyaml
+lima
+little-cms2
+llvm
+lua
+lz4
+lzo
+m1-terraform-provider-helper
+m4
+macvim
+make
+masscan
+maven
+mbedtls
+mbedtls@3
+mpdecimal
+mpfr
+mpg123
+multi-gitter
+ncurses
+netcat
+netpbm
+nettle
+node
+node@24
+nova
+npth
+numpy
+nvm
+oniguruma
+openblas
+opencore-amr
+openexr
+openjdk
+openjdk@17
+openjpeg
+openjph
+openssl@3
+opus
+orca-cli
+p11-kit
+p7zip
+pango
+pcre2
+pgbadger
+pinentry
+pinentry-mac
+pixman
+pkgconf
+plantuml
+pluto
+pmd
+pnpm
+pre-commit
+procs
+pycparser
+pydantic
+pydantic-core
+pyenv
+pyoxidizer
+python-certifi
+python-cryptography
+python-markdown
+python@3.12
+python@3.13
+python@3.14
+q
+qemu
+rav1e
+rclone
+readline
+renovate
+ripgrep
+ronn
+rpds-py
+rtmpdump
+rubberband
+ruby
+rust
+scw
+sdl2
+shared-mime-info
+shellcheck
+siege
+simdjson
+skaffold
+skopeo
+snappy
+socat
+sonar-scanner
+sops
+speex
+sqlite
+srt
+starship
+stress
+svt-av1
+syft
+tcpflow
+terraform-docs
+terragrunt
+tesseract
+tflint
+tfsec
+tfswitch
+theora
+tmux
+tree
+trivy
+trufflehog
+ud-cli
+unbound
+utf8proc
+uvwasi
+vde
+velero
+virtualenv
+webp
+webp-pixbuf-loader
+wget
+x264
+x265
+xorgproto
+xvid
+xz
+yamllint
+yarn
+yq
+z3
+zeromq
+zimg
+zoxide
+zstd
+1password
+1password-cli
+authy
+balenaetcher
+claude-code
+coconutbattery
+confluent-cli
+cyberduck
+daisydisk
+displaylink
+docker
+docker-desktop
+dropbox
+dupeguru
+finch
+firefox
+gcloud-cli
+gitup
+gitup-app
+google-chrome
+google-cloud-sdk
+google-drive
+insomnia
+intellij-idea
+iterm2
+keepassxc
+keka
+macvim
+microsoft-auto-update
+microsoft-office
+microsoft-teams
+openlens
+p4v
+sensiblesidebuttons
+session-manager-plugin
+slack
+spotify
+temurin@21
+temurin@25
+todoist
+todoist-app
+vlc
+whatsapp
+wireshark
+wireshark-app
+xca
+yed
 && \
 brew install --cask \
-    1password \
-    1password-cli \
-    authy \
-    balenaetcher \
-    coconutbattery \
-    confluent-cli \
-    cyberduck \
-    disk-inventory-x \
-    docker \
-    dropbox \
-    evernote \
-    finch \
-    firefox \
-    gitup \
-    google-chrome \
-    google-cloud-sdk \
-    google-drive \
-    insomnia \
-    intellij-idea \
-    iterm2 \
-    karabiner-elements \
-    keka \
-    macvim \
-    microsoft-auto-update \
-    microsoft-onenote \
-    microsoft-teams \
-    openlens \
-    p4v \
-    sensiblesidebuttons \
-    session-manager-plugin \
-    slack \
-    spotify \
-    todoist \
-    whatsapp \
-    wireshark \
-    yed \
+1password
+1password-cli
+authy
+balenaetcher
+claude-code
+coconutbattery
+confluent-cli
+cyberduck
+daisydisk
+displaylink
+docker
+docker-desktop
+dropbox
+dupeguru
+finch
+firefox
+gcloud-cli
+gitup
+gitup-app
+google-chrome
+google-cloud-sdk
+google-drive
+insomnia
+intellij-idea
+iterm2
+keepassxc
+keka
+macvim
+microsoft-auto-update
+microsoft-office
+microsoft-teams
+openlens
+p4v
+sensiblesidebuttons
+session-manager-plugin
+slack
+spotify
+temurin@21
+temurin@25
+todoist
+todoist-app
+vlc
+whatsapp
+wireshark
+wireshark-app
+xca
+yed
 && \ 
 brew tap \
-    aws/tap \
-    farmotive/k8s \
-    harelba/q \
-    hashicorp/tap \
-    homebrew/services \
-    kreuzwerker/taps \
-    lindell/multi-gitter \
-    localstack/tap \
-    warrensbox/tap
+aquasecurity/trivy
+aws/tap
+fairwindsops/tap
+farmotive/k8s
+harelba/q
+hashicorp/tap
+homebrew/services
+kaos/shell
+kreuzwerker/taps
+lindell/multi-gitter
+localstack/tap
+norwoodj/tap
+orcasecurity/orca-cli
+ratp/ops-cli,
+ratp/teams-cli
+ratp/ud-cli
+warrensbox/tap
 
 ```
 
